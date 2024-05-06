@@ -7,3 +7,4 @@ export { default as Input } from "./common/Input";
 
 // homepage
 export { default as Banner} from "./homePage/Banner"
+export { default as Partners} from "./homePage/Partners"

@@ -16,8 +16,11 @@ const Button = ({
       className={cn(
         `${
           style == "primary" &&
-          "bg-primary rounded-lg px-5 py-2 text-center text-white"
-        }`,
+          "bg-primary  text-white hover:bg-orange-700" 
+        }  ${
+          style == "secondary" &&
+          "bg-white border-2 text-gray-600 hover:bg-gray-100"
+        }  rounded-lg px-14 py-2 text-center text-sm font-semibold transition-all duration-300 ease-in-out`,
         className
       )}
     >

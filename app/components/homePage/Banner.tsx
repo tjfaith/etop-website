@@ -1,9 +1,12 @@
-import React from 'react'
-import { LineBg } from '@/app/assets'
-import Image from 'next/image'
+import React from "react";
+import { Img1, Img2, Img3, Img4, PosVendor, LineBg, Stripe } from "@/app/assets";
+import Image from "next/image";
+import {Button} from "@/app/components"
+
 const Banner = () => {
   return (
-    <div className="relative h-screen-50">
+    <div>
+    <div className="relative h-screen-60 flex flex-col items-center justify-center gap-8">
       <Image
         src={LineBg}
         alt="Line Background"
@@ -13,13 +16,50 @@ const Banner = () => {
       />
       <div>
         <div className="w-full flex items-center justify-center">
-        <div className="uppercase text-5xl  ">
-        We Make your <span>Payment</span> Easier and Faster
-        </div>
+          <div className="uppercase text-4xl font-bold flex-col items-center flex gap-3">
+            <div className="flex items-center space-x-3">
+              <div>We Make your</div>
+              <div className="text-primary relative">
+                <div>Payment</div>
+                <div>
+                  <Image
+                    src={Stripe}
+                    alt="Line Background"
+                    className=" absolute -bottom-3"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>Easier and Faster</div>
+          </div>
         </div>
       </div>
+      <div className="w-1/2 text-center">
+        E-Top Limited is an electronic payment solution provider, harnessing the
+        best technologies and offering it to strategic partners. We are
+        dedicated to changing the way you pay for goods and services.
+      </div>
+      <div className="gap-5 flex items-center justify-center">
+        <Button label={"Get in touch"} onClick={()=>{} }/>
+        <Button label={"View services"} onClick={()=>{} } style="secondary"/>
+      </div>
     </div>
-  )
-}
+    <div className="flex items-stretch w-full gap-5 ">
+      <div className="rounded-xl w-50-screen h-screen-50">
+        <Image src={Img1} alt="banner image" className="w-full h-full object-cover rounded-xl"/>
+      </div>
+      <div className=" w-30-screen h-screen-40 rounded-xl  self-end mb-5 ">
+      <Image src={Img2} alt="banner image"  className="w-full h-full object-cover rounded-xl" />
+      </div>
+      <div className=" w-30-screen h-screen-40 rounded-xl -mt-10">
+      <Image src={Img3} alt="banner image"  className="w-full h-full object-cover rounded-xl" />
+      </div>
+      <div className="rounded-xl w-50-screen h-screen-50">
+        <Image src={Img4} alt="banner image" className="w-full h-full object-cover rounded-xl"/>
+      </div>
+    </div>
+    </div>
+  );
+};
 
-export default Banner
+export default Banner;
