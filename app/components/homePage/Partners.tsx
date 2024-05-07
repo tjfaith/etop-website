@@ -17,7 +17,8 @@ const Partners = () => {
   return (
     <section className="w-full text-center mt-20 px-28 flex flex-col gap-10 ">
       <div className="text-gray-700 font-semibold">Meet our partners</div>
-      <div className="flex items-center w-full justify-between">
+      <div className="flex items-center w-full justify-between" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
         <Image src={AccessBankLogo} alt="Access Bank" />
         <Image src={WemaBankLogo} alt="Sterling Bank" />
         <Image src={ZenithBankLogo} alt="Zenith Bank" />
@@ -28,8 +29,8 @@ const Partners = () => {
         <Image src={HeritageBankLogo} alt="Heritage Bank" />
       </div>
       <div className="flex items-center justify-center space-x-7">
-      <Image src={Acc1} alt="Accredited 1" />
-      <Image src={Acc2} alt="Accredited 2" />
+      <Image src={Acc1} alt="Accredited 1" data-aos="zoom-in-up" data-aos-delay="300"/>
+      <Image src={Acc2} alt="Accredited 2" data-aos="zoom-in-up" data-aos-delay="400"/>
       </div>
     </section>
   );

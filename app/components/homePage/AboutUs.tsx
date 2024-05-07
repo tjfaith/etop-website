@@ -15,10 +15,14 @@ const AboutUs = () => {
   return (
     <section className="px-28 w-full flex flex-col justify-center items-center ">
       <div className=" flex flex-col justify-center items-center relative gap-5">
-    <div className="flex w-full justify-center items-center  ">
-      <BgStyle className="absolute left-0"/>
-      <BgStyle fill="#F2F4F7" fill2="#F2F4F7" className="absolute right-0"/>
-    </div>
+        <div className="flex w-full justify-center items-center  ">
+          <BgStyle className="absolute left-0" />
+          <BgStyle
+            fill="#F2F4F7"
+            fill2="#F2F4F7"
+            className="absolute right-0"
+          />
+        </div>
         <div className="flex items-center space-x-2 text-4xl font-bold  ">
           <span>What makes us</span>
           <HighlightedText text="unique" />
@@ -29,11 +33,14 @@ const AboutUs = () => {
         </div>
       </div>
 
-
-
       <div className=" w-9/12 inline-flex items-center justify-center gap-8 mt-16 radial-gradient ">
         {/* left */}
-        <div className="border border-primary rounded-2xl w-96 p-8 space-y-5 bg-white">
+        <div
+          className="border border-primary rounded-2xl w-96 p-8 space-y-5 bg-white"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-delay="300"
+        >
           <Image src={BuildingsIcon} alt="Building Icon" />
           <div className="font-bold">Our Company</div>
           <div className="text-sm">
@@ -50,11 +57,16 @@ const AboutUs = () => {
               className=" -z-10 px-20"
             />
           </div>
-        </div>  
+        </div>
 
         {/* middle */}
         <div className="space-y-4 w-96 ">
-          <div className="border border-primary rounded-2xl w-full p-8 space-y-5 bg-white">
+          <div
+            className="border border-primary rounded-2xl w-full p-8 space-y-5 bg-white"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="200"
+          >
             <Image src={BuildingsIcon} alt="Building Icon" />
             <div className="font-bold">Our objective</div>
             <div className="text-sm">
@@ -63,7 +75,12 @@ const AboutUs = () => {
               all major credit and debit cards in Africa.
             </div>
           </div>
-          <div className="border-2 border-orange-300 bg-primary rounded-2xl w-full p-8 space-y-5 relative flex items-center justify-center flex-col text-center">
+          <div
+            className="border-2 border-orange-300 bg-primary rounded-2xl w-full p-8 space-y-5 relative flex items-center justify-center flex-col text-center"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="400"
+          >
             <div className="font-bold text-white z-0">
               We will continue to serve you with all our heart.
             </div>
@@ -81,7 +98,13 @@ const AboutUs = () => {
               onClick={() => {}}
             />
           </div>
-          <div className="border border-primary rounded-2xl w-full p-8 space-y-5 bg-white">
+          <div
+            className="border border-primary rounded-2xl w-full p-8 space-y-5 bg-white"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="500"
+            data-aos-once
+          >
             <Image src={PeopleIcon} alt="Building Icon" />
             <div className="font-bold">Our partners</div>
             <div className="text-sm">
@@ -93,7 +116,12 @@ const AboutUs = () => {
         </div>
 
         {/* right */}
-        <div className="border border-primary rounded-2xl w-96 p-8 space-y-5 bg-white">
+        <div
+          className="border border-primary rounded-2xl w-96 p-8 space-y-5 bg-white"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-delay="100"
+        >
           <Image src={BuildingsIcon} alt="Building Icon" />
           <div className="font-bold">Our mission</div>
           <div className="text-sm">

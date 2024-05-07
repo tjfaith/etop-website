@@ -4,7 +4,9 @@ import { BgStyleProps } from "@/app/interfaces/assets.interface";
 
 const BgStyle = ({fill='#EA661C', fill2='#FADAC9',  className}:BgStyleProps) => {
   return (
-    <div className={className}>
+    <div className={className} data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
       <svg
         width="92"
         height="91"
