@@ -14,28 +14,25 @@ const Banner = () => {
           objectFit="cover"
           className=" -z-10 px-20"
         />
-        <div>
+        <div data-aos="fade-down">
           <div className="w-full flex items-center justify-center">
             <div className="uppercase text-4xl font-bold flex-col items-center flex gap-3">
               <div className="flex items-center space-x-3" data-aos="fade-up">
                 <div>We Make your</div>
                 <HighlightedText text="Payment" />
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-easing="linear"
-              >
+              <div data-aos="fade-up" data-aos-easing="linear">
                 Easier and Faster
               </div>
             </div>
           </div>
         </div>
-        <div className="w-1/2 text-center">
+        <div className="w-1/2 text-center" data-aos="fade-down">
           E-Top Limited is an electronic payment solution provider, harnessing
           the best technologies and offering it to strategic partners. We are
           dedicated to changing the way you pay for goods and services.
         </div>
-        <div className="gap-5 flex items-center justify-center">
+        <div className="gap-5 flex items-center justify-center" data-aos="fade-down">
           <Button label={"Get in touch"} onClick={() => {}} />
           <Button
             label={"View services"}
@@ -45,32 +42,48 @@ const Banner = () => {
         </div>
       </div>
       <div className="flex items-stretch w-full gap-5 ">
-        <div className="rounded-xl w-50-screen h-screen-50"   data-aos="fade-up"
-                data-aos-easing="linear"  data-aos-delay="600">
+        <div
+          className="rounded-xl w-50-screen h-screen-50"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-delay="600"
+        >
           <Image
             src={Img1}
             alt="banner image"
             className="w-full h-full object-cover rounded-xl"
           />
         </div>
-        <div className=" w-30-screen h-screen-40 rounded-xl  self-end mb-5 "   data-aos="fade-up"
-                data-aos-easing="linear"  data-aos-delay="500">
+        <div
+          className=" w-30-screen h-screen-40 rounded-xl  self-end mb-5 "
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-delay="500"
+        >
           <Image
             src={Img2}
             alt="banner image"
             className="w-full h-full object-cover rounded-xl"
           />
         </div>
-        <div className=" w-30-screen h-screen-40 rounded-xl -mt-10"   data-aos="fade-up"
-                data-aos-easing="linear"  data-aos-delay="400">
+        <div
+          className=" w-30-screen h-screen-40 rounded-xl -mt-10"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-delay="400"
+        >
           <Image
             src={Img3}
             alt="banner image"
             className="w-full h-full object-cover rounded-xl"
           />
         </div>
-        <div className="rounded-xl w-50-screen h-screen-50"   data-aos="fade-up"
-                data-aos-easing="linear"  data-aos-delay="300">
+        <div
+          className="rounded-xl w-50-screen h-screen-50"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-delay="300"
+        >
           <Image
             src={Img4}
             alt="banner image"
