@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         primary: '#EA661C',
-        secondary: '#FDF0E8'
+        secondary: '#FDF0E8',
+        abstract:'#121212'
       },
       maxWidth: {
         "5-screen": "5vw",

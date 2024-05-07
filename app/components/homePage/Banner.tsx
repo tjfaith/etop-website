@@ -1,11 +1,11 @@
 import React from "react";
-import { Img1, Img2, Img3, Img4, PosVendor, LineBg, Stripe } from "@/app/assets";
+import { Img1, Img2, Img3, Img4, LineBg } from "@/app/assets";
 import Image from "next/image";
-import {Button} from "@/app/components"
+import {Button, HighlightedText} from "@/app/components"
 
 const Banner = () => {
   return (
-    <div>
+    <section>
     <div className="relative h-screen-60 flex flex-col items-center justify-center gap-8">
       <Image
         src={LineBg}
@@ -19,16 +19,7 @@ const Banner = () => {
           <div className="uppercase text-4xl font-bold flex-col items-center flex gap-3">
             <div className="flex items-center space-x-3">
               <div>We Make your</div>
-              <div className="text-primary relative">
-                <div>Payment</div>
-                <div>
-                  <Image
-                    src={Stripe}
-                    alt="Line Background"
-                    className=" absolute -bottom-3"
-                  />
-                </div>
-              </div>
+              <HighlightedText text="Payment"/>
             </div>
             <div>Easier and Faster</div>
           </div>
@@ -58,7 +49,7 @@ const Banner = () => {
         <Image src={Img4} alt="banner image" className="w-full h-full object-cover rounded-xl"/>
       </div>
     </div>
-    </div>
+    </section>
   );
 };
 

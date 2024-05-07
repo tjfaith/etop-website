@@ -7,3 +7,7 @@ export interface ButtonProps{
     onClick:()=>void;
     type?:ButtonType;
 }
+
+export interface HighlightedTextProps{
+    text:string
+}
