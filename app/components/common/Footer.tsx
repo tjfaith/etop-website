@@ -9,8 +9,8 @@ import { FaLinkedin } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-abstract  text-white space-y-5">
-      <section className="flex justify-between px-28 py-10">
-        <div className="space-y-4 w-3/12">
+      <section className="flex md:flex-row flex-col justify-between gap-10 md:gap-0 lg:px-28 px-5 py-10">
+        <div className="space-y-4 md:w-3/12">
           <Image src={FullLogo} alt="logo" />
           <div className="text-sm">
             ETOP - Nigeria: Making Payments Easier. E-Top Limited is an
@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <section className="w-full flex items-center justify-between text-sm py-10 px-28 border-t">
+      <section className="w-full flex md:flex-row flex-col md:items-center md:gap-0 gap-3 justify-between text-sm py-10 lg:px-28 px-5 border-t">
         <div>
         &copy; {new Date().getFullYear()}  <Link href={"/"}>E-top Nigeria.</Link> All rights reserved.
         </div>

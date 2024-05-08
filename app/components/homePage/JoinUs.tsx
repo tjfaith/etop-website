@@ -5,16 +5,16 @@ import Image from "next/image";
 
 const JoinUs = () => {
   return (
-    <section className="w-full px-28 bg-primary text-white py-10 flex items-center justify-center relative ">
+    <section className="w-full lg:px-28 px-5 bg-primary text-white py-10 flex items-center justify-center relative ">
       <Image
         src={MapBase}
         alt="Line Background"
-        className=" -z-0 px-20 absolute bottom-0 object-contain"
+        className=" -z-0 md:px-20 absolute md:bottom-0  h-full  md:object-contain object-cover"
         
       />
 
-      <div className=" flex flex-col items-center justify-center border rounded-xl py-5 px-10 space-y-5 backdrop-blur-sm bg-primary/10 mt-16">
-        <div className="font-bold text-xl">
+      <div className=" flex flex-col items-center justify-center border rounded-xl py-5 px-10 space-y-5 backdrop-blur-sm bg-primary/10 md:mt-16 mt-5">
+        <div className="font-bold md:text-xl text-sm text-center ">
           Join us as we build a community all over the world
         </div>
         <Button

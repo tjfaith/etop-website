@@ -11,3 +11,10 @@ export interface ButtonProps{
 export interface HighlightedTextProps{
     text:string
 }
+
+export interface LoaderProps {
+    color?: string;
+    loading?: boolean;
+    size?: number;
+    fullScreen?: boolean;
+  }

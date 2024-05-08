@@ -13,30 +13,30 @@ import {
 
 const AboutUs = () => {
   return (
-    <section className="px-28 w-full flex flex-col justify-center items-center ">
+    <section className="md:px-28 px-5 w-full flex flex-col justify-center items-center ">
       <div className=" flex flex-col justify-center items-center relative gap-5">
         <div className="flex w-full justify-center items-center  ">
-          <BgStyle className="absolute left-0" />
+          <BgStyle className="absolute left-0 -z-10" />
           <BgStyle
             fill="#F2F4F7"
             fill2="#F2F4F7"
-            className="absolute right-0"
+            className="absolute right-0 bottom-0 md:bottom-auto -z-10"
           />
         </div>
-        <div className="flex items-center space-x-2 text-4xl font-bold  ">
+        <div className="flex items-center space-x-2 lg:text-4xl text-2xl font-bold  ">
           <span>What makes us</span>
           <HighlightedText text="unique" />
         </div>
-        <div className="w-8/12 text-center">
+        <div className="lg:w-8/12  text-center">
           You get to know of the foundation our company is built upon and a
           little secret on how we have thrived over the years.
         </div>
       </div>
 
-      <div className=" w-9/12 inline-flex items-center justify-center gap-8 mt-16 radial-gradient ">
+      <div className=" md:w-9/12  inline-flex items-center flex-col md:flex-row justify-center gap-8 mt-16 radial-gradient ">
         {/* left */}
         <div
-          className="border border-primary rounded-2xl w-96 p-8 space-y-5 bg-white"
+          className="border border-primary rounded-2xl md:w-96 p-8 space-y-5 bg-white"
           data-aos="fade-up"
           data-aos-anchor-placement="bottom-bottom"
           data-aos-delay="300"
@@ -60,7 +60,7 @@ const AboutUs = () => {
         </div>
 
         {/* middle */}
-        <div className="space-y-4 w-96 ">
+        <div className="space-y-4 md:w-96 ">
           <div
             className="border border-primary rounded-2xl w-full p-8 space-y-5 bg-white"
             data-aos="fade-up"
@@ -117,7 +117,7 @@ const AboutUs = () => {
 
         {/* right */}
         <div
-          className="border border-primary rounded-2xl w-96 p-8 space-y-5 bg-white"
+          className="border border-primary rounded-2xl md:w-96 p-8 space-y-5 bg-white"
           data-aos="fade-up"
           data-aos-anchor-placement="bottom-bottom"
           data-aos-delay="100"

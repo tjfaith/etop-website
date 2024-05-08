@@ -5,6 +5,7 @@ export { default as Footer } from "./common/Footer";
 export { default as Accordion } from "./common/Accordion";
 export { default as Input } from "./common/Input";
 export { default as HighlightedText } from "./common/HighlightedText";
+export { default as Loader } from "./common/Loader";
 
 // homepage
 export { default as Banner} from "./homePage/Banner"
