@@ -1,17 +1,21 @@
 "use client";
 import { usePathname } from "next/navigation";
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useRef, useState } from "react";
 import Image from "next/image";
 import { FullLogo } from "@/app/assets";
 import { Button } from "@/app/components";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { useClickOutside } from "@/app/hooks";
 
 const Header = () => {
   const currentPath = usePathname();
+  const menuRef = useRef<any>(null)
   const [showMenu, setShowMenu] = useState(false);
+
+  useClickOutside(menuRef, false, setShowMenu)
   return (
-    <header className=" md:px-28 px-5  flex flex-col lg:flex-row w-full items-center justify-between fixed bg-white z-20  pb-5 pt-8">
+    <header ref={menuRef} className=" md:px-28 px-5  flex flex-col lg:flex-row w-full items-center justify-between fixed bg-white z-20  pb-5 pt-8">
       <div className="flex items-center justify-between md:w-auto w-full animate__animated  animate__fadeInUp">
         <Link href="/">
           <Image src={FullLogo} alt="logo" width={120} height={20} />
