@@ -6,9 +6,9 @@ export {default as Img1} from './images/img1.jpeg'
 export {default as Img2} from './images/img2.jpeg'
 export {default as Img3} from './images/img3.jpeg'
 export {default as Img4} from './images/img4.jpeg'
-export {default as Img5} from './images/img5.jpg'
-export {default as Img6} from './images/img6.jpg'
-export {default as Img7} from './images/img7.jpg'
+export {default as Img5} from './images/img5.jpeg'
+export {default as Img6} from './images/img6.jpeg'
+export {default as Img7} from './images/img7.jpeg'
 export {default as Img8} from './images/img8.jpeg'
 
 // svg
