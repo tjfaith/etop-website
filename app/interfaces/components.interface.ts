@@ -18,3 +18,10 @@ export interface LoaderProps {
     size?: number;
     fullScreen?: boolean;
   }
+
+export interface AccordionComponentProps {
+    items: {
+       title:string,
+       content:string 
+    }[]
+}

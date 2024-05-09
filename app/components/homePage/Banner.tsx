@@ -25,8 +25,8 @@ const Banner = () => {
   };
 
   return (
-    <section className="lg:pt-auto pt-3 lg:px-28 px-5">
-      <div className="relative h-screen-60 flex flex-col items-center justify-center gap-8 mt-10">
+    <section className="lg:px-28 px-5">
+      <div className="relative h-screen-60 flex flex-col items-center justify-center gap-8 pt-10">
         <Image
           src={LineBg}
           alt="Line Background"
@@ -52,13 +52,20 @@ const Banner = () => {
           the best technologies and offering it to strategic partners. We are
           dedicated to changing the way you pay for goods and services.
         </div>
-        <div className="gap-5 flex md:flex-row flex-col items-center justify-center" data-aos="fade-down">
-          <Button label={"Get in touch"} onClick={() => {}} className='whitespace-nowrap border-2 border-primary' />
+        <div
+          className="gap-5 flex md:flex-row flex-col items-center justify-center"
+          data-aos="fade-down"
+        >
+          <Button
+            label={"Get in touch"}
+            onClick={() => {}}
+            className="whitespace-nowrap border-2 border-primary"
+          />
           <Button
             label={"View services"}
             onClick={() => {}}
             style="secondary"
-            className='whitespace-nowrap'
+            className="whitespace-nowrap"
           />
         </div>
       </div>
@@ -89,13 +96,13 @@ const Banner = () => {
           data-aos-easing="linear"
           data-aos-delay="500"
         >
-        <div className="w-full  h-screen-40 mb-5">
-          <Image
-            src={Img2}
-            alt="banner image"
-            className="w-full h-full object-cover rounded-xl"
-          />
-        </div>
+          <div className="w-full  h-screen-40 mb-5">
+            <Image
+              src={Img2}
+              alt="banner image"
+              className="w-full h-full object-cover rounded-xl"
+            />
+          </div>
         </div>
         <div
           className=" w-full h-screen-40 rounded-xl -mt-8 px-2"

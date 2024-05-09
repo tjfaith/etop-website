@@ -1,5 +1,5 @@
 "use client";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React, { Fragment, useRef, useState } from "react";
 import Image from "next/image";
 import { FullLogo } from "@/app/assets";
@@ -9,17 +9,30 @@ import { Menu, X } from "lucide-react";
 import { useClickOutside } from "@/app/hooks";
 
 const Header = () => {
+  const router = useRouter();
   const currentPath = usePathname();
-  const menuRef = useRef<any>(null)
+  const menuRef = useRef<any>(null);
   const [showMenu, setShowMenu] = useState(false);
 
-  useClickOutside(menuRef, false, setShowMenu)
+  const navigate = (route: string) => {
+    setShowMenu(false);
+    router.push(route);
+  };
+  useClickOutside(menuRef, false, setShowMenu);
   return (
-    <header ref={menuRef} className=" md:px-28 px-5  flex flex-col lg:flex-row w-full items-center justify-between fixed bg-white z-20  pb-5 pt-8">
+    <section className=" h-10 md:h-40 lg:h-20">
+    <header
+      ref={menuRef}
+      className=" md:px-28 px-5  flex flex-col lg:flex-row w-full items-center justify-between fixed bg-white z-20  py-5"
+    >
       <div className="flex items-center justify-between md:w-auto w-full animate__animated  animate__fadeInUp">
-        <Link href="/">
-          <Image src={FullLogo} alt="logo" width={120} height={20} />
-        </Link>
+        <Image
+          src={FullLogo}
+          alt="logo"
+          width={120}
+          height={20}
+          onClick={() => navigate("/")}
+        />
         <button onClick={() => setShowMenu(!showMenu)}>
           {showMenu ? (
             <X className=" md:hidden" />
@@ -32,72 +45,66 @@ const Header = () => {
       <ul
         className={`
       ${showMenu ? "flex" : "hidden"}
-
       md:flex md:flex-row animate__animated  animate__fadeInUp bg-white  flex-col w-full md:w-auto md:items-center justify-between md:gap-10 gap-2 my-4 `}
       >
-        <li>
-          <Link
-            href={"/about_us"}
-            className={`
+        <li
+          onClick={() => navigate("/about_us")}
+          className={`
                ${
                  currentPath === "/about_us"
                    ? "text-primary"
                    : "hover:text-primary/50 duration-300 ease-in-out transition-all hover:font-bold "
                }
-                  whitespace-nowrap `}
-          >
-            About us
-          </Link>
+                  whitespace-nowrap  cursor-pointer`}
+        >
+          About us
         </li>
-        <li>
-          <Link
-            href={"/services"}
-            className={`
-              ${
-                currentPath === "/services"
-                  ? "text-primary"
-                  : "hover:text-primary/50 duration-300 ease-in-out transition-all hover:font-bold "
-              }
-                 whitespace-nowrap `}
-          >
-            Services
-          </Link>
+        <li
+          onClick={() => navigate("/services")}
+          className={`
+               ${
+                 currentPath === "/services"
+                   ? "text-primary"
+                   : "hover:text-primary/50 duration-300 ease-in-out transition-all hover:font-bold "
+               }
+                  whitespace-nowrap  cursor-pointer`}
+        >
+          Services
         </li>
-        <li>
-          <Link
-            href={"/industry_solution"}
-            className={`
-              ${
-                currentPath === "/industry_solution"
-                  ? "text-primary"
-                  : "hover:text-primary/50 duration-300 ease-in-out transition-all hover:font-bold "
-              }
-                 whitespace-nowrap `}
-          >
-            Industry solutions
-          </Link>
+        <li
+          onClick={() => navigate("/industry_solution")}
+          className={`
+               ${
+                 currentPath === "/industry_solution"
+                   ? "text-primary"
+                   : "hover:text-primary/50 duration-300 ease-in-out transition-all hover:font-bold "
+               }
+                  whitespace-nowrap  cursor-pointer`}
+        >
+          Industry solutions
         </li>
-        <li>
-          <Link
-            href={"/contact_us"}
-            className={`
-              ${
-                currentPath === "/contact_us"
-                  ? "text-primary"
-                  : "hover:text-primary/50 duration-300 ease-in-out transition-all hover:font-bold "
-              }
-                 whitespace-nowrap `}
-          >
-            Contact us
-          </Link>
+        <li
+          onClick={() => navigate("/contact_us")}
+          className={`
+               ${
+                 currentPath === "/contact_us"
+                   ? "text-primary"
+                   : "hover:text-primary/50 duration-300 ease-in-out transition-all hover:font-bold "
+               }
+                  whitespace-nowrap  cursor-pointer`}
+        >
+          Contact us
         </li>
       </ul>
       <Button
         onClick={() => {}}
         label="Get in touch"
-        className={`${showMenu ? "flex" : "hidden"} md:block whitespace-nowrap self-start md:self-center animate__animated  animate__fadeInUp`}
+        className={`${
+          showMenu ? "flex" : "hidden"
+        } md:block whitespace-nowrap self-start md:self-center animate__animated  animate__fadeInUp`}
       />
     </header>
+    </section>
   );
 };
 

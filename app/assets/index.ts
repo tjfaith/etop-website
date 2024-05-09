@@ -10,6 +10,7 @@ export {default as Img5} from './images/img5.jpeg'
 export {default as Img6} from './images/img6.jpeg'
 export {default as Img7} from './images/img7.jpeg'
 export {default as Img8} from './images/img8.jpeg'
+export {default as Img9} from './images/img9.png'
 
 // svg
 export {default as AccessBankLogo} from './svg/access_bank_logo.svg'
@@ -35,11 +36,13 @@ export {default as CrownIcon} from './custom_icons/crown.svg'
 export {default as AwardIcon} from './custom_icons/award.svg'
 export {default as ProfileIcon} from './custom_icons/profile.svg'
 export {default as PartnershipIcon} from './custom_icons/partnership.svg'
-export {default as MapBase} from './backgrounds/map_base.svg'
 
 // backgrounds
+export {default as MapBase} from './backgrounds/map_base.svg'
+export {default as MapBase2} from './backgrounds/map_base2.svg'
 export {default as LineBg } from './backgrounds/line_bg.svg'
 export {default as Stripe} from './backgrounds/stripe.svg'
 export {default as Circle} from './backgrounds/circle.svg'
 export {default as VectorLine} from './backgrounds/vector_line.svg'
+export {default as Objectives} from './backgrounds/objectives.svg'
 

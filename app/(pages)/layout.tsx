@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "react-multi-carousel/lib/styles.css";
+import { Footer, Header } from "@/app/components";
 
 const PageLayout = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
@@ -11,8 +12,10 @@ const PageLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div>
+      <Header />
      
         {children}
+      <Footer/>
        
     </div>
   );
