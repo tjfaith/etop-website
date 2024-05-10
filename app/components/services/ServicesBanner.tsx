@@ -18,7 +18,7 @@ const CareerBanner = () => {
           What do we <span className="text-primary">offer</span>?
         </div>
         <div className="md:w-1/2 text-center md:text-base text-sm" data-aos="fade-down">
-        We empower individuals to take control of their financial lives with our comprehensive service. Simplifying the complexities of finance, we provide the tools and knowledge needed for informed decisions. That's what sets us apart.
+        We empower individuals to take control of their financial lives with our comprehensive service. Simplifying the complexities of finance, we provide the tools and knowledge needed for informed decisions. That&apos;s what sets us apart.
         </div>
 
         <div className="rounded-xl md:h-screen-72 w-full mt-5">

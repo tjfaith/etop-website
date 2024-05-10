@@ -12,7 +12,7 @@ const OpenPositions = () => {
         accurate and valuable insights to our users, enabling them to make
         informed financial decisions. You will be responsible for analyzing
         market trends, conducting research, and delivering comprehensive
-        financial reports. Your expertise will help shape our platform's
+        financial reports. Your expertise will help shape our platform&apos;s
         offerings and contribute to the overall success of our users.
       </div>
       <div className="mt-3">
@@ -69,7 +69,7 @@ const OpenPositions = () => {
         >
           As a dynamic and rapidly growing financial website, we offer a range
           of exciting career opportunities for those who are passionate about
-          finance, technology, and making a positive impact on people's lives.
+          finance, technology, and making a positive impact on people&apos;s lives.
           Are you ready to take your career to the next level? Explore our open
           positions below
         </div>
