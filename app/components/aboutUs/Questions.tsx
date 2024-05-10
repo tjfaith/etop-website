@@ -1,5 +1,5 @@
 import React from "react";
-import { AccordionComponent } from "@/app/components";
+import { CustomAccordion } from "@/app/components";
 
 const Questions = () => {
   const questions = [
@@ -52,7 +52,7 @@ const Questions = () => {
         </div>
       </div>
 
-      <AccordionComponent items={questions} />
+      <CustomAccordion items={questions} />
     </div>
   );
 };

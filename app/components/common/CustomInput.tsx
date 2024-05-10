@@ -1,5 +1,5 @@
 import React from "react";
-import { Input } from "@nextui-org/react";
+import { Input , Textarea} from "@nextui-org/react";
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
 import { CustomInputProps } from "@/app/interfaces/components.interface";
@@ -35,7 +35,35 @@ const InputComponent = ({
             </label>
           </div>
         </div>
-      ) : (
+      ) : type === 'textarea' ? (
+        <Textarea
+        label={label}
+        placeholder={placeholder}
+        labelPlacement="outside"
+        radius="sm"
+        variant="bordered"
+        classNames={{
+          label: ["font-bold z-0"],
+          input: [
+            "transition-all",
+            "ease-in-out",
+            "duration-300",
+            "w-full",
+            "p-3",
+            "border",
+            "border-gray-300",
+            "rounded-md",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring",
+            "focus:shadow-primary",
+            "focus:ring-primary/30",
+          ],
+          inputWrapper: ["px-0", "border-none", "shadow-sm"],
+        }}
+        
+      />
+      ) :(
         <Input
           value={value}
           type={type}

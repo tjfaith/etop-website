@@ -29,3 +29,10 @@ export { default as WeOffer } from "./careers/WeOffer"
 export { default as OpenPosition } from "./careers/OpenPositions"
 export { default as FindRole } from "./careers/FindRole"
 
+// contact us
+export { default as GetInTouch } from "./contactUs/GetInTouch"
+
+// services
+export { default as ServicesBanner } from "./services/ServicesBanner"
+
+
