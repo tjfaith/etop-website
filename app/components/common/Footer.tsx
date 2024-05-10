@@ -21,19 +21,19 @@ const Footer = () => {
         <div>
           <div className="font-bold">Company</div>
           <ul className="space-y-2 mt-3 text-sm">
-            <li className="hover:text-gray-100 transition-all ease-in-out duration-300">
+            <li className="hover:text-primary transition-all ease-in-out duration-300">
               <Link href={"/"}>Home</Link>
             </li>
-            <li className="hover:text-gray-100 transition-all ease-in-out duration-300">
+            <li className="hover:text-primary transition-all ease-in-out duration-300">
               <Link href={"/about_us"}>About Us</Link>
             </li>
-            <li className="hover:text-gray-100 transition-all ease-in-out duration-300">
+            <li className="hover:text-primary transition-all ease-in-out duration-300">
               <Link href={"/industry_solutions"}>Industry solutions</Link>
             </li>
-            <li className="hover:text-gray-100 transition-all ease-in-out duration-300">
+            <li className="hover:text-primary transition-all ease-in-out duration-300">
               <Link href={"/terminal_repair"}>Terminal repair</Link>
             </li>
-            <li className="hover:text-gray-100 transition-all ease-in-out duration-300">
+            <li className="hover:text-primary transition-all ease-in-out duration-300">
               <Link href={"/careers"}>Careers</Link>
             </li>
           </ul>

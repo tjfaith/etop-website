@@ -1,9 +1,10 @@
 import React from "react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
-import { AccordionComponentProps } from "@/app/interfaces/components.interface";
+import { CustomAccordionProps } from "@/app/interfaces/components.interface";
 import { CircleMinus, CirclePlus } from "lucide-react";
 
-const AccordionComponent = ({ items }: AccordionComponentProps) => {
+
+const AccordionComponent = ({ items }: CustomAccordionProps) => {
   const itemClasses = {
     base: "py-0 w-full",
     title: "font-normal text-medium font-semibold",
@@ -11,6 +12,9 @@ const AccordionComponent = ({ items }: AccordionComponentProps) => {
     indicator: "text-medium font-bold text-black",
     content: " px-2 text-sm text-gray-500 font-light",
   };
+
+
+
   return (
     <Accordion
       defaultExpandedKeys={["0"]}
@@ -29,7 +33,7 @@ const AccordionComponent = ({ items }: AccordionComponentProps) => {
           aria-label={val.title}
           title={val.title}
         >
-          {val.content}
+         {val.content}
         </AccordionItem>
       ))}
     </Accordion>
