@@ -22,7 +22,7 @@ const Values = () => {
         </div>
       </div>
 
-      <div className="mt-10 flex flex-wrap gap-20 justify-between">
+      <div className="mt-10 flex flex-wrap gap-20 justify-between overflow-hidden">
         <div className="md:w-5/12" data-aos="zoom-out-down">
           <div className="rounded-2xl h-screen-40">
             <Image

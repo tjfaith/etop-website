@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CareerBanner = () => {
   return (
-    <section className="">
+    <section>
       <div className="relative lg:px-28 px-5 sm:min-h-screen min-h-50-screen flex flex-col items-center justify-center md:gap-8 mt-8 ">
         <Image
           src={LineBg}
