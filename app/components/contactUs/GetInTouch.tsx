@@ -19,7 +19,7 @@ const GetInTouch = () => {
         </div>
       </div>
 
-      <div className="mt-10 md:w-5/12 w-full mb-16">
+      <div className="mt-10 md:w-5/12 w-full ">
         <form className=" flex flex-col gap-5">
           <div className="flex gap-5 md:flex-row flex-col w-full">
             <div className="flex-grow">
