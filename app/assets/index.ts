@@ -2,6 +2,7 @@
 export {default as FullLogo} from './images/full_logo.png'
 export {default as Acc1} from './images/acc_1.png'
 export {default as Acc2} from './images/acc_2.png'
+export {default as Acc3} from './images/acc_3.png'
 export {default as Img1} from './images/img1.jpeg'
 export {default as Img2} from './images/img2.jpeg'
 export {default as Img3} from './images/img3.jpeg'
@@ -15,6 +16,9 @@ export {default as Img10} from './images/img10.png'
 export {default as Img11} from './images/img11.jpeg'
 export {default as Img12} from './images/img12.jpeg'
 export {default as Img13} from './images/img13.jpeg'
+export {default as Img14} from './images/img14.jpeg'
+export {default as Img15} from './images/img15.jpeg'
+export {default as Img16} from './images/img16.jpeg'
 
 // svg
 export {default as AccessBankLogo} from './svg/access_bank_logo.svg'

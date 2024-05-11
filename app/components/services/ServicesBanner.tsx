@@ -1,5 +1,5 @@
 import React from "react";
-import { Img10, LineBg } from "@/app/assets";
+import { Img14, LineBg } from "@/app/assets";
 import Image from "next/image";
 
 const CareerBanner = () => {
@@ -22,7 +22,7 @@ const CareerBanner = () => {
         </div>
 
         <div className="rounded-xl md:h-screen-72 w-full mt-5">
-          <Image src={Img10} alt="Banner Image" className="rounded-xl h-auto max-w-full object-cover object-center lg:h-full lg:w-full " />
+          <Image src={Img14} alt="Banner Image" className="rounded-xl h-auto max-w-full object-cover object-center lg:h-full lg:w-full " />
         </div>
       </div>
     </section>

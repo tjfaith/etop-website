@@ -27,12 +27,12 @@ const Footer = () => {
             <li className="hover:text-primary transition-all ease-in-out duration-300">
               <Link href={"/about_us"}>About Us</Link>
             </li>
-            <li className="hover:text-primary transition-all ease-in-out duration-300">
-              <Link href={"/industry_solutions"}>Industry solutions</Link>
-            </li>
-            <li className="hover:text-primary transition-all ease-in-out duration-300">
+            {/* <li className="hover:text-primary transition-all ease-in-out duration-300">
+              <Link href={"/careers"}>Industry solutions</Link>
+            </li> */}
+            {/* <li className="hover:text-primary transition-all ease-in-out duration-300">
               <Link href={"/terminal_repair"}>Terminal repair</Link>
-            </li>
+            </li> */}
             <li className="hover:text-primary transition-all ease-in-out duration-300">
               <Link href={"/careers"}>Careers</Link>
             </li>
@@ -73,10 +73,10 @@ const Footer = () => {
         <div>
         &copy; {new Date().getFullYear()}  <Link href={"/"}>E-top Nigeria.</Link> All rights reserved.
         </div>
-        <div className="flex items-center  text-white gap-3">
-        <FaTwitter />
-        <FaLinkedin/>
-        <FaFacebook />
+        <div className="flex items-center  text-white gap-3 text-lg">
+       <Link target="_blank" href="https://twitter.com/e-top"> <FaTwitter /></Link>
+       <Link target="_blank" href="https://www.linkedin.com/in/etop-nigeria-4069b72b6/?originalSubdomain=ng"> <FaLinkedin/></Link>
+       <Link target="_blank" href="https://www.facebook.com/etopnigerialimited/"> <FaFacebook /></Link>
         </div>
       </section>
     </footer>

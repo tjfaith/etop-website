@@ -3,8 +3,10 @@ import { Img1, Img2, Img3, Img4, LineBg } from "@/app/assets";
 import Image from "next/image";
 import { Button, HighlightedText } from "@/app/components";
 import Carousel from "react-multi-carousel";
+import {  useRouter } from "next/navigation";
 
 const Banner = () => {
+  const router =useRouter()
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -58,12 +60,12 @@ const Banner = () => {
         >
           <Button
             label={"Get in touch"}
-            onClick={() => {}}
+            onClick={() => router.push("/contact_us")}
             className="whitespace-nowrap border-2 border-primary"
           />
           <Button
             label={"View services"}
-            onClick={() => {}}
+            onClick={() => router.push('/services')}
             style="secondary"
             className="whitespace-nowrap"
           />

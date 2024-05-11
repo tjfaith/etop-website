@@ -1,11 +1,12 @@
 'use client'
-import { ServicesBanner } from '@/app/components'
+import { ServicesBanner, ServicesList } from '@/app/components'
 import React from 'react'
 
 const Services = () => {
   return (
-    <div>
+    <div className='space-y-10'>
         <ServicesBanner/>
+        <ServicesList/>
     </div>
   )
 }

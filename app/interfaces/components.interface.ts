@@ -1,5 +1,5 @@
-import { InputProps } from '@nextui-org/react';
-import React, {Dispatch, ReactNode, SetStateAction} from 'react'
+import { InputProps, TabsProps } from '@nextui-org/react';
+import {Dispatch, ReactNode, SetStateAction} from 'react'
 type ButtonStyle = "primary" | "secondary"
 type ButtonType = "submit" | "button"
 export interface ButtonProps{
@@ -43,4 +43,11 @@ export interface CustomSelectProps{
         value:any,
         description?:string,
     }[]
+}
+
+export interface CustomTabProps extends TabsProps{
+    data: {
+        title:string,
+        content: ReactNode | string 
+     }[]
 }

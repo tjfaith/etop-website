@@ -4,6 +4,7 @@ export { default as Header } from "./common/Header";
 export { default as Footer } from "./common/Footer";
 export { default as CustomAccordion } from "./common/CustomAccordion"
 export { default as CustomInput } from "./common/CustomInput";
+export { default as CustomTab} from "./common/CustomTab";
 export { default as CustomSelect } from "./common/CustomSelect";
 export { default as HighlightedText } from "./common/HighlightedText";
 export { default as Loader } from "./common/Loader";
@@ -34,5 +35,6 @@ export { default as GetInTouch } from "./contactUs/GetInTouch"
 
 // services
 export { default as ServicesBanner } from "./services/ServicesBanner"
+export { default as ServicesList } from "./services/ServiceList"
 
 

@@ -13,6 +13,7 @@ import {
   UBALogo,
   Acc1,
   Acc2,
+  Acc3,
 } from "@/app/assets";
 
 const Partners = () => {
@@ -56,12 +57,20 @@ const Partners = () => {
         <Image src={SterlingBankLogo} alt="Sterling Bank" className="ml-8" />
         <Image src={HeritageBankLogo} alt="Heritage Bank" className="ml-8"/>
       </Carousel>
-      <div className="flex items-center justify-center md:gap-7">
+      <div className="flex items-center md:flex-row flex-col justify-center md:gap-7">
         <Image
           src={Acc1}
           alt="Accredited 1"
           data-aos="zoom-in-up"
           data-aos-delay="300"
+        />
+          <Image
+          src={Acc3}
+          alt="Accredited 3"
+          data-aos="zoom-in-up"
+          data-aos-delay="300"
+          height={270} 
+          width={270}
         />
         <Image
           src={Acc2}

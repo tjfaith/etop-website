@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        warning: '#FDF0E8',
         primary: '#EA661C',
         secondary: '#FDF0E8',
         abstract:'#121212'

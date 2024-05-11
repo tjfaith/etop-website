@@ -1,10 +1,9 @@
 "use client";
 import { usePathname, useRouter } from "next/navigation";
-import React, { Fragment, useRef, useState } from "react";
+import React, {  useRef, useState } from "react";
 import Image from "next/image";
 import { FullLogo } from "@/app/assets";
 import { Button } from "@/app/components";
-import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useClickOutside } from "@/app/hooks";
 
@@ -25,7 +24,7 @@ const Header = () => {
       ref={menuRef}
       className=" md:px-28 px-5  flex flex-col lg:flex-row w-full items-center justify-between fixed bg-white z-20  py-5"
     >
-      <div className="flex items-center justify-between md:w-auto w-full animate__animated  animate__fadeInUp">
+      <div className="flex items-center justify-between cursor-pointer md:w-auto w-full animate__animated  animate__fadeInUp">
         <Image
           src={FullLogo}
           alt="logo"
@@ -72,10 +71,10 @@ const Header = () => {
           Services
         </li>
         <li
-          onClick={() => navigate("/industry_solution")}
+          onClick={() => navigate("/careers")}
           className={`
                ${
-                 currentPath === "/industry_solution"
+                 currentPath === "/careers"
                    ? "text-primary"
                    : "hover:text-primary/50 duration-300 ease-in-out transition-all hover:font-bold "
                }
@@ -97,7 +96,7 @@ const Header = () => {
         </li>
       </ul>
       <Button
-        onClick={() => {}}
+        onClick={() => navigate('/contact_us')}
         label="Get in touch"
         className={`${
           showMenu ? "flex" : "hidden"
