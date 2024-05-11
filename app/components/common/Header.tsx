@@ -80,7 +80,7 @@ const Header = () => {
                }
                   whitespace-nowrap  cursor-pointer`}
         >
-          Industry solutions
+          Careers
         </li>
         <li
           onClick={() => navigate("/contact_us")}
