@@ -54,7 +54,7 @@ const WeOffer = () => {
           <div>
           <span className="font-semibold">Professional Development:</span>
           <div>
-          We're dedicated to investing in our employees to help them reach their professional aspirations, whether short-term, medium-term, or long-term.
+          We&apos;re dedicated to investing in our employees to help them reach their professional aspirations, whether short-term, medium-term, or long-term.
           </div>
           </div>
         </div>
