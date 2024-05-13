@@ -12,14 +12,16 @@ const InputComponent = ({
   label,
   placeholder,
   phone,
+  required,
   setPhone,
 }: CustomInputProps) => {
   return (
     <>
       {type === "phone" ? (
         <PhoneInput
+          required={required}
           defaultCountry="ng"
-          className="w-full z-10 border-none"
+          className=" z-10 flex-grow border-none flex items-center  transition-all ease-in-out duration-300 border border-gray-300 rounded-lg  hover:border-primary hover:shadow-primary hover:ring-primary/20 hover:ring shadow-sm w-full text-sm text-slate-500"
           value={phone}
           onChange={(phone) => setPhone && setPhone(phone)}
         />
@@ -29,7 +31,9 @@ const InputComponent = ({
           <div className="flex items-center px-3 py-2 space-x-3 transition-all ease-in-out duration-300 border border-gray-300 rounded-lg  hover:border-primary hover:shadow-primary hover:ring-primary/20 hover:ring shadow-sm w-full text-sm text-slate-500">
             <Image src={DocumentUpload} alt="File icon" />
 
-            <input type="file" id="custom-input" hidden />
+            <input type="file" id="custom-input" hidden 
+            required={required}
+            />
             <label htmlFor="custom-input" className="  cursor-pointer w-full">
               File Upload
             </label>
@@ -42,6 +46,7 @@ const InputComponent = ({
         labelPlacement="outside"
         radius="sm"
         variant="bordered"
+        isRequired={required}
         classNames={{
           label: ["font-bold z-0"],
           input: [
@@ -71,6 +76,7 @@ const InputComponent = ({
           labelPlacement="outside"
           placeholder={placeholder}
           radius="sm"
+        isRequired={required}
           variant="bordered"
           classNames={{
             label: ["font-bold z-0"],

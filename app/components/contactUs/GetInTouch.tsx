@@ -1,7 +1,28 @@
 import React from "react";
+import axios from 'axios';
 import { CustomInput, CustomSelect, Button } from "@/app/components";
 
 const GetInTouch = () => {
+
+
+const sendEmail = async()=>{
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('/api/send_email', {
+        username: 'tej',
+        attachments: "values.attachments",
+      });
+  
+      console.log("ok");
+    } catch (error) {
+      console.error("not ok", error);
+    }
+  };
+
+}
+
+
   return (
     <div className="lg:px-28 px-5 flex flex-col items-center mt-10">
       <div className="text-center flex flex-col items-center justify-center ">
@@ -20,7 +41,7 @@ const GetInTouch = () => {
       </div>
 
       <div className="mt-10 md:w-5/12 w-full ">
-        <form className=" flex flex-col gap-5">
+        <form className=" flex flex-col gap-5" onSubmit={sendEmail}>
           <div className="flex gap-5 md:flex-row flex-col w-full">
             <div className="flex-grow">
               <CustomInput

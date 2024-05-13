@@ -108,9 +108,7 @@ const AboutUs = () => {
             <Image src={PeopleIcon} alt="Building Icon" />
             <div className="font-bold">Our partners</div>
             <div className="text-sm">
-              We realize the important of alliance partners in the technology
-              industry not only for our success but of yours and we will
-              continue to partner with leading companies across the globe.
+            We realize the significance of strategic partnerships within our financial ecosystem. We will continue to sustain mutually beneficial relationships with all financial institutions and relevant stakeholders within the industry.
             </div>
           </div>
         </div>

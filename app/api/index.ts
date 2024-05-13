@@ -1,0 +1,1 @@
+export {default as send_email} from './routes/send_email'

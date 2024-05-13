@@ -8,6 +8,8 @@ export { default as CustomTab} from "./common/CustomTab";
 export { default as CustomSelect } from "./common/CustomSelect";
 export { default as HighlightedText } from "./common/HighlightedText";
 export { default as Loader } from "./common/Loader";
+export { default as EmailTemplate } from "./common/EmailTemplate";
+
 
 // homepage
 export { default as Banner} from "./homePage/Banner"

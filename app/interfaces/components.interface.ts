@@ -32,12 +32,14 @@ type InputType = 'phone' | InputProps["type"]
 export interface CustomInputProps extends InputProps{
     phone?:string;
     setPhone?: Dispatch<SetStateAction<string>>
-    type?: InputType
+    type?: InputType;
+    required?: boolean;
 }
 
 export interface CustomSelectProps{
     placeholder:string;
     label:string;
+    required?:boolean;
     data:{
         label:string,
         value:any,
