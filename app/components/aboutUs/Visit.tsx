@@ -14,8 +14,7 @@ const Visit = () => {
           className=" text-center md:text-base text-sm md:w-9/12 mt-3  text-gray-500 "
           data-aos="fade-down text-gray-500  "
         >
-          We have offices all over Nigeria with adequate support for you and in
-          addition, experiences staffs to attend to all your needs and requests.
+          We have 4 regional offices in Lagos, Ibadan, Port Harcourt and Abuja. We have field support personnel in over 25 state.
         </div>
       </div>
       <div className="bg-gray-50 border-2 flex md:flex-row flex-col items-center justify-between gap-10 border-gray-300 text-sm rounded-2xl p-5 mt-8 md:divide-x-2 divide-gray-100 " data-aos="fade-up">
@@ -23,7 +22,7 @@ const Visit = () => {
           <div className="text-primary font-semibold">Lagos office </div>
           <div>
             <div>309A, Island Way,Dolphin, Ikoyi, Lagos.</div>
-            <div>+234 (01) 4538207</div>
+            <div>+2349152498001, +2349152498088</div>
             <div>support@etopng.com</div>
           </div>
         </div>
@@ -31,16 +30,24 @@ const Visit = () => {
         <div className="text-center px-10 w-full">
           <div className="text-primary font-semibold">Abuja office  </div>
           <div>
-            <div>Flat 2, No 10, Suez Crescent,Abacha Estate, Wuse Zone 4. Abuja</div>
-            <div>+234 (0) 9 7800610</div>
+            <div>3rd Floor, Nicon Insurance Plaza, Central Business District, Abuja.</div>
+            <div>+2349152496002</div>
             <div>support@etopng.com</div>
           </div>
         </div>
         <div className="text-center px-10 w-full">
           <div className="text-primary font-semibold">Port-Harcourt office </div>
           <div>
-            <div>SUITE 10, R&B Galleria, Abacha Road, GRA PHASE III Port Harcourt Rivers State</div>
-            <div>08032002437</div>
+            <div>Suite 10 R&B Galleria Abacha Rd, GRA, Port-Harcourt.</div>
+            <div>+2349152496055</div>
+            <div>support@etopng.com</div>
+          </div>
+        </div>
+        <div className="text-center px-10 w-full">
+          <div className="text-primary font-semibold">Ibadan office </div>
+          <div>
+            <div>No 2, Lawal okelanfa street, off Ring Road, by Derovance Bus/Stop Ibadan, Oyo state.</div>
+            <div>+2349152494800</div>
             <div>support@etopng.com</div>
           </div>
         </div>

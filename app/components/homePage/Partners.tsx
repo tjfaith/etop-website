@@ -3,14 +3,19 @@ import Image from "next/image";
 import Carousel from "react-multi-carousel";
 
 import {
+  PsbLogo,
   AccessBankLogo,
+  EcoBankLogo,
   FCMBLogo,
-  ZenithBankLogo,
   FirstBankLogo,
+  GlobusBankLogo,
+  GtbankLogo,
   HeritageBankLogo,
+  StanbicBankLogo,
   SterlingBankLogo,
-  WemaBankLogo,
   UBALogo,
+  WemaBankLogo,
+  ZenithBankLogo,
   Acc1,
   Acc2,
   Acc3,
@@ -46,16 +51,21 @@ const Partners = () => {
         draggable
         infinite
         arrows={false}
-        className="w-full"
+        className="w-full items-center space-x-5 "
       >
+        <Image src={PsbLogo} alt="9psb Logo" />
         <Image src={AccessBankLogo} alt="Access Bank" />
+        <Image src={EcoBankLogo} alt="Eco Bank" />
+        <Image src={FCMBLogo} alt="FCMB" />
+        <Image src={FirstBankLogo} alt="First Bank" />
+        <Image src={GlobusBankLogo} alt="Globus Bank" />
+        <Image src={GtbankLogo} alt="GT Bank" />
+        <Image src={HeritageBankLogo} alt="Heritage Bank" className="ml-8"/>
+        <Image src={StanbicBankLogo} alt="Stanbic Bank" className="ml-8" />
+        <Image src={SterlingBankLogo} alt="Sterling Bank" className="ml-8" />
+        <Image src={UBALogo} alt="UBA Bank" />
         <Image src={WemaBankLogo} alt="Sterling Bank" />
         <Image src={ZenithBankLogo} alt="Zenith Bank" />
-        <Image src={FirstBankLogo} alt="First Bank" />
-        <Image src={FCMBLogo} alt="FCMB" />
-        <Image src={UBALogo} alt="UBA Bank" />
-        <Image src={SterlingBankLogo} alt="Sterling Bank" className="ml-8" />
-        <Image src={HeritageBankLogo} alt="Heritage Bank" className="ml-8"/>
       </Carousel>
       <div className="flex items-center md:flex-row flex-col justify-center md:gap-7">
         <Image

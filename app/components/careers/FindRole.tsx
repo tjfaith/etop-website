@@ -4,24 +4,25 @@ import { CustomInput, CustomSelect, Button } from "@/app/components";
 import ReactCountryFlagsSelect from "react-country-flags-select";
 
 const FindRole = () => {
+  const [country, setCountry] = useState<any>(null);
   const [formData, setFormData] = useState<any>({
     email:"",
     firstName:"",
     lastName:"",
-    country:null
+    // country:null
   })
     const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-      try {
-        const response = await axios.post("/api/send_email", {
-          username: "tej",
-          attachments: "values.attachments",
-        });
+      // try {
+      //   const response = await axios.post("/api/send_email", {
+      //     username: "tej",
+      //     attachments: "values.attachments",
+      //   });
 
-        console.log(response, "ok");
-      } catch (error) {
-        console.error("not ok", error);
-      }
+      //   console.log(response, "ok");
+      // } catch (error) {
+      //   console.error("not ok", error);
+      // }
   };
 
   const countrySelectClasses = {
@@ -37,7 +38,7 @@ const FindRole = () => {
           className="lg:text-4xl text-xl font-bold  items-center"
           data-aos="fade-up"
         >
-          Can’t find your role ?
+          Can&#x201B;t find your role ?
         </div>
         <div
           className=" text-center md:text-base text-sm md:w-7/12 mt-3  text-gray-500 "
@@ -82,7 +83,7 @@ const FindRole = () => {
 
           <div>
           <div className={`font-bold pb-2 text-sm `}>Country <span className="text-red-500">*</span></div>
-          <ReactCountryFlagsSelect  fullWidth  selected={formData.country} classes={countrySelectClasses} onSelect={(value)=>setFormData({...formData, country:value})} searchable={true} />
+          <ReactCountryFlagsSelect  fullWidth  selected={country} classes={countrySelectClasses} onSelect={setCountry} searchable={true} />
           <small className="text-xs text-red-500">Please fill out this field.</small>
           </div>
           <CustomInput type="phone" required={true} />

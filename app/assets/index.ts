@@ -21,19 +21,26 @@ export {default as Img15} from './images/img15.jpeg'
 export {default as Img16} from './images/img16.jpeg'
 
 // svg
-export {default as AccessBankLogo} from './svg/access_bank_logo.svg'
-export {default as FCMBLogo} from './svg/fcmb_logo.svg'
-export {default as FirstBankLogo} from './svg/first_bank_logo.svg'
-export {default as HeritageBankLogo} from './svg/heritage_bank_logo.svg'
-export {default as SterlingBankLogo} from './svg/sterling_bank_logo.svg'
-export {default as WemaBankLogo} from './svg/wema_bank_logo.svg'
-export {default as ZenithBankLogo} from './svg/zenith_bank_logo.svg'
-export {default as UBALogo} from './svg/uba_logo.svg'
 export {default as OurCompany} from './svg/our_company.svg'
 export {default as ATMCard} from './svg/atm_card.svg'
 
 // tsx
 export {default as BgStyle} from './tsx/BgStyle'
+
+// partners_logo
+export {default as PsbLogo} from './partners_logo/9psb_logo.png'
+export {default as AccessBankLogo} from './partners_logo/access_bank_logo.png'
+export {default as EcoBankLogo} from './partners_logo/eco_bank_logo.png'
+export {default as FCMBLogo} from './partners_logo/fcmb_logo.png'
+export {default as FirstBankLogo} from './partners_logo/first_bank_logo.png'
+export {default as GlobusBankLogo} from './partners_logo/globus_bank_logo.png'
+export {default as GtbankLogo} from './partners_logo/gtbank_logo.png'
+export {default as HeritageBankLogo} from './partners_logo/heritage_bank_logo.png'
+export {default as StanbicBankLogo} from './partners_logo/stanbic_bank_logo.png'
+export {default as SterlingBankLogo} from './partners_logo/sterling_bank_logo.png'
+export {default as UBALogo} from './partners_logo/uba_logo.png'
+export {default as WemaBankLogo} from './partners_logo/wema_bank_logo.png'
+export {default as ZenithBankLogo} from './partners_logo/zenith_bank_logo.png'
 
 // custom_icons
 export {default as BuildingsIcon} from './custom_icons/buildings.svg'
