@@ -42,7 +42,7 @@ const Partners = () => {
   };
 
   return (
-    <section className="w-full text-center  md:px-28 px-5 flex flex-col gap-10 ">
+    <section className="w-full text-center  md:px-28 px-5 flex flex-col gap-5 ">
       <div className="text-gray-700 font-semibold">Meet our partners</div>
       <Carousel
         responsive={responsive}
@@ -51,23 +51,25 @@ const Partners = () => {
         draggable
         infinite
         arrows={false}
-        className="w-full items-center space-x-5 "
+        keyBoardControl={true}
+        containerClass="space-x-10 "
+        itemClass=" mx-5 w-auto  flex flex-row items-center "
       >
-        <Image src={PsbLogo} alt="9psb Logo" />
-        <Image src={AccessBankLogo} alt="Access Bank" />
-        <Image src={EcoBankLogo} alt="Eco Bank" />
-        <Image src={FCMBLogo} alt="FCMB" />
-        <Image src={FirstBankLogo} alt="First Bank" />
-        <Image src={GlobusBankLogo} alt="Globus Bank" />
-        <Image src={GtbankLogo} alt="GT Bank" />
-        <Image src={HeritageBankLogo} alt="Heritage Bank" className="ml-8"/>
-        <Image src={StanbicBankLogo} alt="Stanbic Bank" className="ml-8" />
-        <Image src={SterlingBankLogo} alt="Sterling Bank" className="ml-8" />
-        <Image src={UBALogo} alt="UBA Bank" />
-        <Image src={WemaBankLogo} alt="Sterling Bank" />
-        <Image src={ZenithBankLogo} alt="Zenith Bank" />
+        <Image src={PsbLogo} alt="9psb Logo" className="h-16 object-contain"/>
+        <Image src={AccessBankLogo} alt="Access Bank" className="h-16 object-contain"/>
+        <Image src={EcoBankLogo} alt="Eco Bank" className="h-16 object-contain" />
+        <Image src={FCMBLogo} alt="FCMB" className="h-16 object-contain"/>
+        <Image src={FirstBankLogo} alt="First Bank" className="h-16 object-contain"/>
+        <Image src={GlobusBankLogo} alt="Globus Bank"  className="h-16 object-contain"/>
+        <Image src={GtbankLogo} alt="GT Bank" className="h-16 object-contain"/>
+        <Image src={HeritageBankLogo} alt="Heritage Bank"className="h-16 object-contain" />
+        <Image src={StanbicBankLogo} alt="Stanbic Bank"className="h-16 object-contain"  />
+        <Image src={SterlingBankLogo} alt="Sterling Bank"className="h-16 object-contain"  />
+        <Image src={UBALogo} alt="UBA Bank" className="h-16 object-contain"/>
+        <Image src={WemaBankLogo} alt="Sterling Bank" className="h-16 object-contain"/>
+        <Image src={ZenithBankLogo} alt="Zenith Bank" className="h-16 object-contain" />
       </Carousel>
-      <div className="flex items-center md:flex-row flex-col justify-center md:gap-7">
+      <div className="flex items-center md:flex-row flex-col justify-center md:gap-7 mt-10">
         <Image
           src={Acc1}
           alt="Accredited 1"
