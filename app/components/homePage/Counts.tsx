@@ -32,7 +32,7 @@ const Counts = () => {
       </div>
       <div className="flex flex-col justify-center items-center gap-3">
         <Image src={PartnershipIcon} alt="Crown Icon" className="md:w-auto md:h-auto w-5 h-5" />
-        <div className="font-bold md:text-xl"><CountUp enableScrollSpy scrollSpyOnce end={19} /></div>
+        <div className="font-bold md:text-xl"><CountUp enableScrollSpy scrollSpyOnce end={23} /></div>
         <div className=" whitespace-nowrap">Solid partnership</div>
       </div>
     </section>

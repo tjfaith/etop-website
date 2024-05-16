@@ -7,8 +7,10 @@ import {
   LineBg,
   OurCompany,
   PeopleIcon,
-  ATMCard,
+  FlashIcon,
+  Pos,
   BgStyle,
+  GPSIcon,
 } from "@/app/assets";
 
 const AboutUs = () => {
@@ -67,7 +69,7 @@ const AboutUs = () => {
             data-aos-anchor-placement="bottom-bottom"
             data-aos-delay="200"
           >
-            <Image src={BuildingsIcon} alt="Building Icon" />
+            <Image src={GPSIcon} alt="Building Icon" />
             <div className="font-bold">Our objective</div>
             <div className="text-sm">
               To become the number one Payment Terminal Service Provider by
@@ -120,14 +122,14 @@ const AboutUs = () => {
           data-aos-anchor-placement="bottom-bottom"
           data-aos-delay="100"
         >
-          <Image src={BuildingsIcon} alt="Building Icon" />
+          <Image src={FlashIcon} alt="Building Icon" />
           <div className="font-bold">Our mission</div>
           <div className="text-sm">
             Our mission is to enable the Nigerian consumer to have easy and
             secure access to electronic payment solution and Networks.
           </div>
           <div className="flex items-center justify-center w-full ">
-            <Image src={ATMCard} alt="ATM" />
+            <Image src={Pos} alt="POS" />
           </div>
         </div>
       </div>

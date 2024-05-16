@@ -3,8 +3,8 @@ import Image from "next/image";
 import { LineBg, WalletIcon } from "@/app/assets";
 const WeOffer = () => {
   return (
-    <div className="lg:px-28 px-5">
-      <div className="text-center flex flex-col items-center justify-center">
+    <div className="lg:px-28 px-5 ">
+      <div className="text-center flex flex-col items-center justify-center ">
         <div
           className="lg:text-4xl text-xl font-bold  items-center"
           data-aos="fade-up"

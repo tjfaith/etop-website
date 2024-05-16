@@ -28,8 +28,9 @@ const Header = () => {
         <Image
           src={FullLogo}
           alt="logo"
-          width={160}
-          height={20}
+          className=" w-48"
+          // width={150}
+          // height={20}
           onClick={() => navigate("/")}
         />
         <button onClick={() => setShowMenu(!showMenu)}>

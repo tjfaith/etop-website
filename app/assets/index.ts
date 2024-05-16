@@ -1,5 +1,6 @@
 // images
 export {default as FullLogo} from './images/full_logo.png'
+export {default as Pos} from './images/pos.png'
 export {default as Acc1} from './images/acc_1.png'
 export {default as Acc2} from './images/acc_2.png'
 export {default as Acc3} from './images/acc_3.png'

@@ -16,7 +16,7 @@ const AboutBanner = () => {
           className="lg:text-4xl text-2xl font-bold  items-center"
           data-aos="fade-up"
         >
-          Wo are <span className="text-primary">we!</span>
+          Who are <span className="text-primary">we!</span>
         </div>
         <div className="md:w-1/2 text-center md:text-base text-sm" data-aos="fade-down">
           We are a rapidly growing company helping organizations and individuals

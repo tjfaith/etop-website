@@ -7,8 +7,8 @@ const Careers = () => {
         <CareerBanner/>
         <Values/>
         <WeOffer/>
-        <OpenPosition/>
-        <FindRole/>
+        {/* <OpenPosition/> */}
+        {/* <FindRole/> */}
     </div>
   )
 }

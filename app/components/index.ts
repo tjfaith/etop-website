@@ -23,7 +23,6 @@ export { default as JoinUs} from "./homePage/JoinUs"
 export { default as AboutBanner } from "./aboutUs/AboutBanner"
 export { default as Mission } from "./aboutUs/Mission"
 export { default as Visit } from "./aboutUs/Visit"
-export { default as Questions } from "./aboutUs/Questions"
 
 // careers
 export { default as CareerBanner } from "./careers/CareerBanner"
@@ -34,6 +33,7 @@ export { default as FindRole } from "./careers/FindRole"
 
 // contact us
 export { default as GetInTouch } from "./contactUs/GetInTouch"
+export { default as FAQ } from "./contactUs/FAQ"
 
 // services
 export { default as ServicesBanner } from "./services/ServicesBanner"

@@ -30,7 +30,7 @@ const Questions = () => {
       },
   ];
   return (
-    <div className="lg:px-28 px-5 flex flex-col items-center justify-center gap-8 pb-28">
+    <div className="lg:px-28 px-5 flex flex-col items-center justify-center gap-8">
       <div className="text-center flex flex-col items-center justify-center ">
         <div
           className="lg:text-4xl text-xl font-bold  items-center"

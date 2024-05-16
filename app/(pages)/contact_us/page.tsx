@@ -1,11 +1,11 @@
 'use client'
 import React from 'react'
-import {GetInTouch, Questions} from '@/app/components'
+import {GetInTouch, FAQ} from '@/app/components'
 const ContactUs = () => {
   return (
     <div className='space-y-16'>
         <GetInTouch/>
-        <Questions/>
+        <FAQ/>
     </div>
   )
 }

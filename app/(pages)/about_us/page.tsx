@@ -1,5 +1,5 @@
 'use client'
-import { AboutBanner, Mission, Questions, Visit } from '@/app/components'
+import { AboutBanner, Mission, Visit } from '@/app/components'
 import React from 'react'
 
 const AboutUs = () => {
@@ -8,7 +8,6 @@ const AboutUs = () => {
       <AboutBanner/>
       <Mission/>
       <Visit/>
-      <Questions/>
     </div>
   )
 }

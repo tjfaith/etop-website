@@ -24,7 +24,7 @@ const Platforms = () => {
             <div className="font-bold">Mobile application</div>
             <div>
               We are partners in the development and successful rollout of the
-              mobile application which includes e-payment and e-banking. This
+              mobile application which includes e-payment, e-banking and solutions. This
               has helped us maintain a high standard in the financial market and
               also provide lasting solution to our partners.
             </div>
