@@ -14,7 +14,7 @@ const ServiceList = () => {
               <div className="space-y-4">
                 <div>
                   The Falcon Agent app is a secure platform designed for Etop
-                  Nigeria Limited's registered agents.
+                  Nigeria Limited&apos;s registered agents.
                   <div className="flex md:flex-row flex-col gap-5 mt-5">
                     <Image
                       src={Img15}

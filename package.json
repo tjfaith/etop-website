@@ -31,6 +31,7 @@
     "react-international-phone": "^4.2.9",
     "react-multi-carousel": "^2.8.5",
     "react-spinners": "^0.13.8",
+    "sharp": "^0.33.3",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
