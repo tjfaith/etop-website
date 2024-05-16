@@ -28,7 +28,7 @@ const Header = () => {
         <Image
           src={FullLogo}
           alt="logo"
-          width={120}
+          width={160}
           height={20}
           onClick={() => navigate("/")}
         />
