@@ -47,6 +47,18 @@ const Header = () => {
       ${showMenu ? "flex" : "hidden"}
       md:flex md:flex-row animate__animated  animate__fadeInUp bg-white  flex-col w-full md:w-auto md:items-center justify-between md:gap-10 gap-2 my-4 `}
       >
+         <li
+          onClick={() => navigate("/")}
+          className={`
+               ${
+                 currentPath === "/"
+                   ? "text-primary"
+                   : "hover:text-primary/50 duration-300 ease-in-out transition-all hover:font-bold "
+               }
+                  whitespace-nowrap  cursor-pointer`}
+        >
+          Home
+        </li>
         <li
           onClick={() => navigate("/about_us")}
           className={`

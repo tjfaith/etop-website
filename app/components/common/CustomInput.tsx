@@ -18,13 +18,15 @@ const InputComponent = ({
   return (
     <>
       {type === "phone" ? (
+        <div className="w-full">
         <PhoneInput
           required={required}
           defaultCountry="ng"
-          className=" z-10 flex-grow border-none flex items-center  transition-all ease-in-out duration-300 border border-gray-300 rounded-lg  hover:border-primary hover:shadow-primary hover:ring-primary/20 hover:ring shadow-sm w-full text-sm text-slate-500"
+          className=" z-10 flex-grow border-none flex  items-stretch transition-all ease-in-out duration-300 border border-gray-300 rounded-lg  hover:border-primary hover:shadow-primary hover:ring-primary/20 hover:ring shadow-sm w-full text-sm text-slate-500"
           value={phone}
           onChange={(phone) => setPhone && setPhone(phone)}
-        />
+          />
+          </div>
       ) : type === "file" ? (
         <div>
           <div className="font-bold text-gray-700 text-sm mb-2">{label}</div>

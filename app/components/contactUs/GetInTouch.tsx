@@ -62,7 +62,6 @@ const sendEmail = async()=>{
             type="email"
           />
           <CustomInput type="phone" />
-          <CustomInput label="Job Title" placeholder="Input Job title" />
           <CustomInput type="textarea"  label="Message" />
     
           <Button type="submit" label={"Submit"} onClick={() => {}} />

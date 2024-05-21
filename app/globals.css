@@ -19,6 +19,11 @@
     height: 3px; 
   }
 
+
+  .react-international-phone-input {
+    @apply flex-grow;
+  }
+
   .radial-gradient {
     background: radial-gradient(circle closest-side, #fadbc8, rgba(255, 255, 255, 0));
     background-repeat: no-repeat;

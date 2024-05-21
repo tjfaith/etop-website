@@ -58,11 +58,11 @@ const Footer = () => {
           <div className="flex space-x-3 items-center">
             <Phone />
             <Link href="tel:+2349152498001">+2349152498001</Link>
-            <Link href="tel:+2349152498088">09152498088</Link>
+            <Link href="tel:+2349152498088">+2349152498088</Link>
           </div>
           <div className="flex space-x-3 items-center">
             <Mail />
-            <span>support@etopng.com</span>
+            <span> info@etopng.com</span>
           </div>
           <div className="flex space-x-3 items-center">
           <Clock4 />
