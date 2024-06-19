@@ -13,18 +13,20 @@ const InputComponent = ({
   placeholder,
   phone,
   required,
+  onValueChange,
   setPhone,
 }: CustomInputProps) => {
   return (
     <>
       {type === "phone" ? (
-        <div className="w-full">
+        <div className="w-full space-y-1">
+         <span className="font-bold text-sm mb-2 text-gray-500">{label}</span>
         <PhoneInput
           required={required}
           defaultCountry="ng"
           className=" z-10 flex-grow border-none flex  items-stretch transition-all ease-in-out duration-300 border border-gray-300 rounded-lg  hover:border-primary hover:shadow-primary hover:ring-primary/20 hover:ring shadow-sm w-full text-sm text-slate-500"
-          value={phone}
-          onChange={(phone) => setPhone && setPhone(phone)}
+          value={value}
+          onChange={onValueChange}
           />
           </div>
       ) : type === "file" ? (
@@ -49,6 +51,8 @@ const InputComponent = ({
         radius="sm"
         variant="bordered"
         isRequired={required}
+        value={value}
+        onValueChange={onValueChange}
         classNames={{
           label: ["font-bold z-0"],
           input: [
@@ -72,7 +76,6 @@ const InputComponent = ({
       />
       ) :(
         <Input
-          value={value}
           type={type}
           label={label}
           labelPlacement="outside"
@@ -80,6 +83,8 @@ const InputComponent = ({
           radius="sm"
         isRequired={required}
           variant="bordered"
+          value={value}
+        onValueChange={onValueChange}
           classNames={{
             label: ["font-bold z-0"],
             input: [

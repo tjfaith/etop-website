@@ -6,6 +6,7 @@ export interface ButtonProps{
     style?: ButtonStyle;
     className?:string;
     label:string;
+    isLoading?:boolean;
     onClick:()=>void;
     type?:ButtonType;
 }

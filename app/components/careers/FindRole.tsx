@@ -13,16 +13,7 @@ const FindRole = () => {
   })
     const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-      // try {
-      //   const response = await axios.post("/api/send_email", {
-      //     username: "tej",
-      //     attachments: "values.attachments",
-      //   });
-
-      //   console.log(response, "ok");
-      // } catch (error) {
-      //   console.error("not ok", error);
-      // }
+  
   };
 
   const countrySelectClasses = {

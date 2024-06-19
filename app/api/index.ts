@@ -1,1 +1,1 @@
-export {default as send_email} from './routes/send_email'
+export {default as emailServices} from './email.services'
