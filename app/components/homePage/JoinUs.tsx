@@ -2,8 +2,11 @@ import { MapBase } from "@/app/assets";
 import React from "react";
 import { Button } from "@/app/components";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const JoinUs = () => {
+  const router = useRouter()
+
   return (
     <section className="w-full lg:px-28 px-5 bg-primary text-white py-10 flex items-center justify-center relative ">
       <Image
@@ -19,7 +22,8 @@ const JoinUs = () => {
         </div>
         <Button
           label={"Get in touch"}
-          onClick={() => {}}
+          onClick={() => router.push('/contact_us')}
+
           style="secondary"
           className="border-none text-primary"
         />

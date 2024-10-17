@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, HighlightedText } from "@/app/components";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import {
   BuildingsIcon,
   Circle,
@@ -14,6 +15,7 @@ import {
 } from "@/app/assets";
 
 const AboutUs = () => {
+  const router = useRouter()
   return (
     <section className="md:px-28 px-5 w-full flex flex-col justify-center items-center ">
       <div className=" flex flex-col justify-center items-center relative gap-5">
@@ -97,7 +99,7 @@ const AboutUs = () => {
               label="Get in touch"
               style="secondary"
               className="text-primary z-0 font-bold border-none"
-              onClick={() => {}}
+              onClick={() => router.push('/contact_us')}
             />
           </div>
           <div
